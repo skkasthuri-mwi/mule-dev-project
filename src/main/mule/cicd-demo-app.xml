@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="cicd-demo-appFlow" doc:id="847d7a78-2e11-4001-80eb-de4afdf0cfc2" >
 		<http:listener doc:name="Listener" doc:id="24f21fc2-ef0f-4d8c-8a2b-f5d27258f593" config-ref="HTTP_Listener_config" path="/cicd"/>
 		<set-payload value='#["CICD created successfully for the cicd-demo-app api"]' doc:name="Set Payload" doc:id="1fcbfb82-000c-4ba8-87fd-dbc98de15f32" />
+		<logger level="INFO" doc:name="Logger" doc:id="f6a20967-4345-4ad3-933d-1dcb1d066ed8" />
 	</flow>
 </mule>
